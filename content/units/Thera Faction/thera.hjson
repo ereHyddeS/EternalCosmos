@@ -37,12 +37,3 @@ weapon: [
       }
    }
 ]
-abilities: [
-   {
-      type: StatusFieldAbility
-      duration: 300
-      reload: 300
-      range: 80
-   }
-] 
-    
