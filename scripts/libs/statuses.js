@@ -3,7 +3,7 @@
 const theraStatus = extend(StatusEffect, "theraStatus", {
     localizedName: "Thera Faction",
     speedMultiplier: 1.2,
-    healthMultiplier: 1.4
+    healthMultiplier: 1.4,
     damage: -10
 });
 
