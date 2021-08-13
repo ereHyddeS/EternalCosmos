@@ -23,16 +23,18 @@ weapons: [
       y: 1.5
       shots: 3
       inaccuracy: 5
-      shotDelay: 60
+      firstShotDelay: 60
+      shotDelay: 15
       bullet: {
          type: LaserBoltBulletType
          damage: 4
          collidesTeam: true
          healPercent: 5
-         lifetime: 70f
-         lightColor: 85ffc6
+         lifetime: 180
+         frontColor: 85ffc6
+         backColor: 7ad6b9
          buildingDamageMultiplier: 0
-         speed: 0.33
+         speed: 2.25
          lifetime: 606
       }
    }
