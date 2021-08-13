@@ -6,3 +6,7 @@ const theraStatus = extend(StatusEffect, "theraStatus", {
     healthMultiplier: 1.4
     damage: -10
 });
+
+module.exports = {
+    theraStatus: theraStatus
+};

@@ -15,7 +15,7 @@ accel: 0.11
 itemCapacity: 80
 weapon: [
    {
-      name: none
+      name: thera-ui
       top: false
       mirror: true
       alternate: true
