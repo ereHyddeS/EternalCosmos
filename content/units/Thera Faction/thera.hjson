@@ -1,0 +1,48 @@
+type: flying
+flying: true
+controller: BuilderAI
+isCounted: false
+health: 200
+hitSize: 6
+commandLimit: 6
+mineSpeed: 8.75
+mineTier: 3
+buildSpeed: 1.5
+drag: 0.05
+speed: 3
+rotateSpeed: 19
+accel: 0.11
+itemCapacity: 80
+weapon: [
+   {
+      top: false
+      mirror: true
+      alternate: true
+      reload: 150
+      x = 0.875
+      y = 1.5
+      shots = 3
+      inaccuracy: 5
+      shotDelay: 60
+      bullet: {
+         type: LaserBoltBulletType
+         damage: 4
+         collidesTeam: true
+         healPercent: 5
+         lifetime: 70f
+         lightColor: 85ffc6
+         buildingDamageMultiplier: 0
+         speed: 0.33
+         lifetime: 606
+      }
+   }
+]
+abilities: [
+   {
+      type: StatusFieldAbility
+      duration: 300
+      reload: 300
+      range: 80
+   }
+] 
+    
