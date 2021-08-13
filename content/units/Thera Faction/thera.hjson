@@ -19,9 +19,9 @@ weapon: [
       mirror: true
       alternate: true
       reload: 150
-      x = 0.875
-      y = 1.5
-      shots = 3
+      x: 0.875
+      y: 1.5
+      shots: 3
       inaccuracy: 5
       shotDelay: 60
       bullet: {
