@@ -2,14 +2,14 @@ type: flying
 flying: true
 controller: BuilderAI
 isCounted: false
-health: 200
+health: 145
 hitSize: 6
 commandLimit: 6
 mineSpeed: 8.75
 mineTier: 3
-buildSpeed: 1.5
+buildSpeed: 1
 drag: 0.05
-speed: 3
+speed: 2.5
 rotateSpeed: 19
 accel: 0.11
 itemCapacity: 80
@@ -27,15 +27,15 @@ weapons: [
       shotDelay: 15
       bullet: {
          type: LaserBoltBulletType
-         damage: 4
+         damage: 3
          collidesTeam: true
-         healPercent: 5
-         lifetime: 180
+         healPercent: 7
          frontColor: 85ffc6
          backColor: 7ad6b9
          buildingDamageMultiplier: 0
          speed: 2.25
          lifetime: 606
+         maxRange: 200
       }
    }
 ]
