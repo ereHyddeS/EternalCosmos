@@ -16,7 +16,8 @@ const dynamiStatus = extend(StatusEffect, "dynamiStatus", {
     reloadMultiplier: 1.1
 });
 
+//Note to self: ADD COMMA
 module.exports = {
-    theraStatus: theraStatus
+    theraStatus: theraStatus,
     dynamiStatus: dynamiStatus
 };
