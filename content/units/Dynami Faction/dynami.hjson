@@ -1,0 +1,72 @@
+type: flying
+flying: true
+controller: BuilderAI
+isCounted: false
+health: 200
+hitSize: 6.75
+commandLimit: 7
+mineSpeed: 7.5
+mineTier: 2
+buildSpeed: 0.9
+drag: 0.07
+speed: 2.5
+rotateSpeed: 21
+accel: 0.09
+itemCapacity: 50
+weapons: [
+   {
+      name: bomb-cracker
+      top: false
+      mirror: true
+      rotate: false
+      alternate: true
+      reload: 120
+      x: -2.125
+      y: 1.875
+      shots: 2
+      inaccuracy: 1
+      shotDelay: 3
+      recoil: 0.5
+      bullet: {
+         type: BasicBulletType
+         bulletSprite: missle
+         width: 8
+         heaight: 8
+         damage: 5
+         collidesTiles: true
+         frontColor: ff6666
+         backColor: cf5367
+         buildingDamageMultiplier: 0.5
+         speed: 32
+         lifetime: 60
+         trailEffect: artilleryTrail
+         trailLength: 27
+         trailWidth: 3.5
+         trailColor: cf5367
+         trailInterp: slope
+         splashDamageRadius: 56
+         splashDamage: 5
+
+         fragBullets: 2
+         fragLifeMin: 0.3
+         fragBullet: {
+            type: BasicBulletType
+            bulletSprite: shell
+            damage: 2
+            collidesTiles: true
+            frontColor: ff6666
+            backColor: cf5367
+            buildingDamageMultiplier: 0.5
+            speed: 8
+            lifetime: 60
+            trailEffect: artilleryTrail
+            trailLength: 27
+            trailWidth: 3.5
+            trailColor: cf5367
+            trailInterp: slope
+            splashDamageRadius: 32
+            splashDamage: 2
+         }               
+      }
+   }
+]
