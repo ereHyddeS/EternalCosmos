@@ -48,7 +48,7 @@ weapons: [
          trailChance: 0.2
          splashDamageRadius: 56
          splashDamage: 5
-         homingPower = 0.07
+         homingPower: 0.07
          fragBullets: 2
          fragLifeMin: 0.3
          fragBullet: {
