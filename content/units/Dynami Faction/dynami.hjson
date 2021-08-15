@@ -3,6 +3,7 @@ flying: true
 controller: BuilderAI
 isCounted: false
 health: 200
+armor: 2
 hitSize: 6.75
 commandLimit: 7
 mineSpeed: 7.5
@@ -20,9 +21,8 @@ weapons: [
       mirror: true
       rotate: false
       alternate: true
-      flipped: true
       reload: 120
-      x: 2.125
+      x: -2.125
       y: 1.875
       shots: 2
       inaccuracy: 1
@@ -48,6 +48,7 @@ weapons: [
          trailChance: 0.2
          splashDamageRadius: 56
          splashDamage: 5
+         homingPower = 0.07
          fragBullets: 2
          fragLifeMin: 0.3
          fragBullet: {
