@@ -7,6 +7,7 @@ const theraStatus = extend(StatusEffect, "theraStatus", {
     buildSpeedMultiplier: 1.5,
     damage: -0.4
 });
+
 //dynami status effect
 const dynamiStatus = extend(StatusEffect, "dynamiStatus", {
     localizedName: "Dynami Faction",

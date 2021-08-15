@@ -34,8 +34,7 @@ weapons: [
          backColor: 7ad6b9
          buildingDamageMultiplier: 0
          speed: 2.25
-         lifetime: 606
-         maxRange: 200
+         lifetime: 90
       }
    }
 ]
