@@ -22,8 +22,8 @@ weapons: [
       rotate: false
       alternate: true
       reload: 120
-      x: -4
-      y: 1
+      x: -4.25
+      y: 3.75
       shots: 2
       inaccuracy: 1
       shotDelay: 3
