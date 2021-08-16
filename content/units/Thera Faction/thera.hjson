@@ -25,6 +25,7 @@ weapons: [
       inaccuracy: 5
       firstShotDelay: 60
       shotDelay: 15
+      continuous: true
       bullet: {
          type: LaserBoltBulletType
          damage: 3
