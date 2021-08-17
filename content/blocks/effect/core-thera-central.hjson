@@ -12,5 +12,5 @@ requirements: [
   thorium/7000
   surge-alloy/5000
 ]
-research: coreNucleus
+research: core-nucleus
 researchCostMultiplier: 15
