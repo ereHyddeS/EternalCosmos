@@ -16,8 +16,16 @@ const dynamiStatus = extend(StatusEffect, "dynamiStatus", {
     reloadMultiplier: 1.1
 });
 
+//halting status effect
+const haltingStatus = extend(StatusEffect, "haltingStatus", {
+    localizedName: "Halting",
+    speedMultiplier: 0,
+    dragMultiplier: 4
+});
+
 //Note to self: ADD COMMA
 module.exports = {
     theraStatus: theraStatus,
-    dynamiStatus: dynamiStatus
+    dynamiStatus: dynamiStatus,
+    haltingStatus: haltingStatus
 };

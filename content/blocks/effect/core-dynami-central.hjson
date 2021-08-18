@@ -5,7 +5,7 @@ itemCapacity: 20000
 thrusterLength: 14
 category: effect
 unitCapModifier: 32
-unitType: thera
+unitType: dynami
 requirements: [
   copper/14000
   lead/14000
