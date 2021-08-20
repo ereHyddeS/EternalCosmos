@@ -1,0 +1,65 @@
+type: flying
+flying: true
+controller: BuilderAI
+isCounted: false
+health: 220
+armor: 1
+hitSize: 6.25
+commandLimit: 6
+mineSpeed: 7.5
+mineTier: 2
+buildSpeed: 0.9
+drag: 0.08
+speed: 3
+rotateSpeed: 20
+circleTarget: true
+accel: 0.085
+itemCapacity: 65
+weapons: [
+   {
+      top: false
+      mirror: false
+      rotate: false
+      alternate: false
+      reload: 175
+      x: 0
+      y: 0
+      shots: 5
+      shotDelay: 1
+      shootSound: spark
+      bullet: {
+         lifetime: 1
+         type: LightningBulletType
+         speed: 0
+         damage: 10
+         recoil: -10
+      }
+   }
+   {
+      top: false
+      mirror: false
+      rotate: false
+      alternate: false
+      reload: 175
+      x: 0
+      y: 0
+      shots: 3
+      firstShotDelay: 20
+      shotDelay: 0
+      spacing: 45
+      shootCone: 180
+      shootSound: pew
+      bullet: {
+         sprite: shell
+         width: 5
+         height: 5
+         type: BasicBulletType
+         speed: -2.5
+         lifetime: 60
+         damage: 20
+         pierce: true
+         pierceBuilding: true
+         pierceCap: 99999
+      }
+   }
+]

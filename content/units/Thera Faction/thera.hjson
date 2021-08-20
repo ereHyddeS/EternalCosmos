@@ -29,7 +29,7 @@ weapons: [
          type: LaserBoltBulletType
          damage: 0
          collidesTeam: true
-         healPercent: 7
+         healPercent: 10
          frontColor: 85ffc6
          backColor: 7ad6b9
          buildingDamageMultiplier: 0
