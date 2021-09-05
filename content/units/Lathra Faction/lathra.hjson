@@ -32,7 +32,7 @@ weapons: [
          type: LightningBulletType
          speed: 0
          damage: 10
-         recoil: -10
+         recoil: -12
       }
    }
    {
@@ -56,10 +56,10 @@ weapons: [
          type: BasicBulletType
          speed: -2.5
          lifetime: 60
-         damage: 20
+         damage: 15
          pierce: true
          pierceBuilding: true
-         pierceCap: 99999
+         pierceCap: 15
       }
    }
 ]

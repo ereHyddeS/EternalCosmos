@@ -24,6 +24,14 @@ const lathraStatus = extend(StatusEffect, "lathraStatus", {
     reloadMultiplier: 1.5
 });
 
+//frenzy status effect
+const frenzyStatus = extend(StatusEffect, "frenzyStatus", {
+    localizedName: "Frenzy",
+    damageMultiplier: 1.25,
+    reloadMultiplier: 1.25,
+    effectChance: 0.01
+});
+
 //halting status effect
 const haltingStatus = extend(StatusEffect, "haltingStatus", {
     localizedName: "Halting",
@@ -31,10 +39,20 @@ const haltingStatus = extend(StatusEffect, "haltingStatus", {
     dragMultiplier: 4
 });
 
+//dissolving status effect
+const dissolvingStatus = extend(StatusEffect, "dissolvingStatus", {
+    localizedName: "Dissolving",
+    healthMultiplier: 0.9,
+    armorMultiplier: 0,
+    damage: 0.5,
+});
+
 //Note to self: ADD COMMA
 module.exports = {
     dynamiStatus: dynamiStatus,
     theraStatus: theraStatus,
     lathraStatus: lathraStatus,
-    haltingStatus: haltingStatus
+    frenzyStatus: frenzyStatus,
+    haltingStatus: haltingStatus,
+    dissolvingStatus: dissolvingStatus,
 };

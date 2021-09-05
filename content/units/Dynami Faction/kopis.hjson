@@ -1,0 +1,103 @@
+type: mech
+controller: GroundAI
+health: 175
+armor: 1
+hitSize: 6
+commandLimit: 8
+speed: 0.7
+itemCapacity: 30
+singleTarget: true
+decals: {
+   region: eternalcosmos-kopis-decal
+   layer: 31
+   x: 0
+   y: 0
+   rotation: 0
+}
+weapons: [
+   {
+      name: kopis-sword
+      top: false
+      mirror: true
+      rotate: false
+      alternate: true
+      reload: 35
+      x: -3.75
+      y: 1.5
+      shots: 1
+      recoil: 0.5
+      bullet: {
+         type: BasicBulletType
+         sprite: eternalcosmos-chaser
+         width: 8
+         height: 8
+         damage: 7
+         frontColor: ffffff
+         backColor: cf5367
+         speed: 3
+         lifetime: 60
+         lightOpacity: 0.05
+         pierce: true
+         pierceBuilding: true
+         pierceCap: 2
+         trailEffect: {
+            type: ParticleEffect
+            length: 0
+            lifetime: 10
+            particles: 1
+            colorFrom: cf5367
+            colorTo: cf536700
+            sizeFrom: 3
+            sizeTo: 3
+            region: eternalcosmos-trailer
+         }
+         trailMult: 1
+         trailSize: 4
+         trailColor: cf5367
+         trailChance: 0.2
+      }
+   }
+   {
+      top: false
+      mirror: true
+      rotate: false
+      alternate: true
+      reload: 35
+      x: -3.75
+      y: 1.5
+      shots: 1
+      firstShotDelay: 13
+      recoil: 0.5
+      shootSound: artillery
+      bullet: {
+         type: BasicBulletType
+         sprite: eternalcosmos-chaser
+         width: 10
+         height: 10
+         damage: 2
+         frontColor: ff6666
+         backColor: cf5367
+         speed: 3
+         lifetime: 60
+         hitSound: explosion
+         lightOpacity: 0.05
+         splashDamageRadius: 20
+         splashDamage: 5
+         trailEffect: {
+            type: ParticleEffect
+            length: 0
+            lifetime: 15
+            particles: 1
+            colorFrom: cf5367
+            colorTo: cf536700
+            sizeFrom: 5
+            sizeTo: 0
+            region: eternalcosmos-trailer
+         }
+         trailMult: 1
+         trailSize: 4
+         trailColor: cf5367
+         trailChance: 0.2
+      }
+   }
+]

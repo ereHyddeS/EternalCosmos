@@ -30,42 +30,66 @@ weapons: [
       shootSound: missle
       bullet: {
          type: BasicBulletType
-         bulletSprite: missle
+         sprite: eternalcosmos-chaser
          hitEffect: explosion
-         width: 8
-         heaight: 8
+         width: 11
+         height: 11
          damage: 5
          collidesTiles: true
-         frontColor: ff6666
+         frontColor: ffffff
          backColor: cf5367
          buildingDamageMultiplier: 0.5
          speed: 2.75
          lifetime: 105
          hitSound: bang
          scaleVelocity: true
-         trailEffect: artilleryTrail
+         lightOpacity: 0.05
+         weaveMag: 1
+         trailEffect: {
+            type: ParticleEffect
+            length: 0
+            lifetime: 20
+            particles: 1
+            colorFrom: cf5367
+            colorTo: cf536700
+            sizeFrom: 5
+            sizeTo: 5
+            region: eternalcosmos-trailer
+         }
          trailMult: 1
          trailSize: 4
          trailColor: cf5367
          trailChance: 0.2
          splashDamageRadius: 56
          splashDamage: 20
-         homingPower: 0.07
+         homingPower: 0.06
          fragBullets: 2
          fragLifeMin: 0.3
          fragBullet: {
             type: BasicBulletType
-            bulletSprite: shell
+            sprite: eternalcosmos-chaser
+            width: 8
+            height: 8
             hitEffect: explosion
             hitSound: boom
             damage: 2
             lifetime: 90
             speed: 2.3
             collidesTiles: false
-            frontColor: ff6666
+            frontColor: ffffff
             backColor: cf5367
             buildingDamageMultiplier: 0.5
-            trailEffect: artilleryTrail
+            trailEffect: {
+            type: ParticleEffect
+               length: 0
+               lifetime: 20
+               particles: 1
+               colorFrom: cf5367
+               colorTo: cf536700
+               sizeFrom: 3
+               sizeTo: 3
+               region: eternalcosmos-trailer
+            }
             trailMult: 1
             trailSize: 4
             trailColor: cf5367
