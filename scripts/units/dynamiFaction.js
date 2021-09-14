@@ -1,5 +1,5 @@
-const statuses = require("libs/statuses")
-const refresh = require("libs/refresh")
+const statuses = require("libs/cosmicstatuses")
+const refresh = require("libs/cosmicrefresh")
 
 const dynami = extendContent(UnitType, "dynami", {});
 dynami.constructor = () => extend(UnitEntity, {
@@ -13,8 +13,5 @@ Events.on(ClientLoadEvent, b  => {
    dynami.immunities.add(statuses.theraStatus);
    dynami.immunities.add(statuses.lathraStatus);
    dynami.abilities.add(new StatusFieldAbility(statuses.dynamiStatus, 180, 60, 80));
-   kopis.weapons.get(0).shootStatus = statuses.frenzyStatus;
-   kopis.weapons.get(0).shootStatusDuration = 120;
-   kopis.weapons.get(1).shootStatus = statuses.frenzyStatus;
-   kopis.weapons.get(1).shootStatusDuration = 120;
+   kopis.abilities.add(new StatusFieldAbility(statuses.frenzyStatus, 100, 200, 0));
 });

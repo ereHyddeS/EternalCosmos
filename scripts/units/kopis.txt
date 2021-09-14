@@ -1,0 +1,10 @@
+   apply(status, time){
+      if(time == undefined) time = 1
+      if(status != StatusEffects.none && status != null !this.isImmune(status)){
+         if(status === statuses.frenzyStatus){
+            if(Mathf.chance(0.5)){
+               this.super$apply(status, time);
+            }
+         }
+      }
+   }

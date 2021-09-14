@@ -29,9 +29,10 @@ weapons: [
       bullet: {
          type: BasicBulletType
          sprite: eternalcosmos-chaser
+         shrinkY: 0
          width: 8
          height: 8
-         damage: 7
+         damage: 6
          frontColor: ffffff
          backColor: cf5367
          speed: 3
@@ -50,6 +51,7 @@ weapons: [
             sizeFrom: 3
             sizeTo: 3
             region: eternalcosmos-trailer
+            layer: 99
          }
          trailMult: 1
          trailSize: 4
@@ -72,9 +74,10 @@ weapons: [
       bullet: {
          type: BasicBulletType
          sprite: eternalcosmos-chaser
+         shrinkY: 0
          width: 10
          height: 10
-         damage: 2
+         damage: 3
          frontColor: ff6666
          backColor: cf5367
          speed: 3
@@ -93,6 +96,7 @@ weapons: [
             sizeFrom: 5
             sizeTo: 0
             region: eternalcosmos-trailer
+            layer: 99
          }
          trailMult: 1
          trailSize: 4

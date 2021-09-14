@@ -1,5 +1,5 @@
-require("libs/statuses")
-require("libs/refresh")
+require("libs/cosmicstatuses")
+require("libs/cosmicrefresh")
 require("units/dynamiFaction")
 require("units/theraFaction")
 require("units/lathraFaction")
