@@ -1,0 +1,23 @@
+type: UnitFactory
+size: 3
+consumes: {
+  power: 1.2
+}
+plans: [
+  {
+    unit: kopis
+    time: 1500
+    requirements: [
+      silicon/15
+      brass/10
+    ]
+  }
+]
+requirements: [
+  copper/50
+  lead/50
+  metaglass/70
+  silicon/45
+]
+research: naval-factory
+category: units
