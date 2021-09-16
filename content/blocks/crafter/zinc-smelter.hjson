@@ -1,0 +1,40 @@
+type: GenericCrafter
+hasItems: true
+hasPower: true
+hasLiquids: true
+liquidCapacity: 60
+craftTime: 45
+outputItem: zinc/2
+outputLiquid: water/0
+size: 2
+health: 300
+craftEffect: smeltsmoke
+ambientSound: smelter
+ambientVolume: 0.8
+drawer: DrawMixer
+consumes: {
+   power: 1.5
+   items: {
+      items: [
+         sphalerite/3
+      ]
+   }
+   liquid: {
+      liquid: liquid-vitriol
+      amount: 0.3
+   }
+}
+category: crafting
+research: {
+  parent: silicon-smelter
+  objectives: [
+    sphalerite
+  ]
+}
+requirements: [
+  copper/50
+  lead/45
+  graphite/60
+  sphalerite/20
+]
+ 

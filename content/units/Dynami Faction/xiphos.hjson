@@ -1,0 +1,80 @@
+type: mech
+controller: GroundAI
+health: 300
+armor: 3
+hitSize: 8
+commandLimit: 8
+speed: 0.65
+itemCapacity: 30
+singleTarget: true
+deathExplosionEffect: {
+   type: MultiEffect
+   effects: [
+      {
+         type: ParticleEffect
+         region: circle
+         particles: 8
+         length: 15
+         baseLength: 5
+         lifetime: 60
+         sizeFrom: 5
+         sizeTo: 3
+         colorFrom: cf5367
+         colorTo: cf536700
+         layer: 29
+      }
+      {
+         type: ParticleEffect
+         line: true
+         particles: 10
+         length: 50
+         baseLength: 0
+         lifetime: 30
+         strokeFrom: 3
+         strokeTo: 0
+         lenFrom: 6
+         lenTo: 0
+         colorFrom: f6e096
+         colorTo: f68021
+         layer: 29
+      }
+   ]
+}
+weapons: [
+   {
+      name: xiphos-shotgun
+      top: false
+      mirror: true
+      rotate: false
+      alternate: true
+      reload: 18
+      x: -6
+      y: 1.5
+      shots: 5
+      shotDelay: 0
+      inaccuracy: 3
+      shootCone: 30
+      chargeSound: shootBig
+      shootSound: none
+      recoil: 1
+      bullet: {
+         type: LaserBoltBulletType
+         smokeEffect: shootSmallSmoke
+         hitEffect: hitBulletSmall
+         despawnEffect: hitBulletSmall
+         shootEffect: shootSmall
+         reflectable: true
+         recoil: 2
+         shrinkY: 0
+         width: 3
+         height: 12
+         damage: 5
+         lightColor: ffffff
+         speed: 4
+         lifetime: 20
+         pierce: true
+         pierceBuilding: true
+         pierceCap: 2
+      }
+   }
+]

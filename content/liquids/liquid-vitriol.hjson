@@ -4,3 +4,10 @@ color: 3df279
 temparature: 1.3
 explosiveness: 0.75
 flammability: 1
+effect: {
+   name: dissolvingStatus
+   localizedName: Dissolving
+   healthMultiplier: 0.9
+   armorMultiplier: 0
+   damage: 0.5
+}

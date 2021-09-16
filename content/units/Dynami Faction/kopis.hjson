@@ -1,18 +1,44 @@
 type: mech
 controller: GroundAI
-health: 175
+health: 125
 armor: 1
 hitSize: 6
 commandLimit: 8
 speed: 0.7
 itemCapacity: 30
 singleTarget: true
-decals: {
-   region: eternalcosmos-kopis-decal
-   layer: 31
-   x: 0
-   y: 0
-   rotation: 0
+deathExplosionEffect: {
+   type: MultiEffect
+   effects: [
+      {
+         type: ParticleEffect
+         region: circle
+         particles: 8
+         length: 15
+         baseLength: 5
+         lifetime: 60
+         sizeFrom: 5
+         sizeTo: 3
+         colorFrom: cf5367
+         colorTo: cf536700
+         layer: 29
+      }
+      {
+         type: ParticleEffect
+         line: true
+         particles: 10
+         length: 50
+         baseLength: 0
+         lifetime: 30
+         strokeFrom: 3
+         strokeTo: 0
+         lenFrom: 6
+         lenTo: 0
+         colorFrom: f6e096
+         colorTo: f68021
+         layer: 29
+      }
+   ]
 }
 weapons: [
    {
@@ -21,18 +47,18 @@ weapons: [
       mirror: true
       rotate: false
       alternate: true
-      reload: 35
+      reload: 42
       x: -3.75
       y: 1.5
       shots: 1
-      recoil: 0.5
+      recoil: 0.7
       bullet: {
          type: BasicBulletType
          sprite: eternalcosmos-chaser
          shrinkY: 0
          width: 8
          height: 8
-         damage: 6
+         damage: 7
          frontColor: ffffff
          backColor: cf5367
          speed: 3
@@ -64,7 +90,7 @@ weapons: [
       mirror: true
       rotate: false
       alternate: true
-      reload: 35
+      reload: 42
       x: -3.75
       y: 1.5
       shots: 1
@@ -77,7 +103,7 @@ weapons: [
          shrinkY: 0
          width: 10
          height: 10
-         damage: 3
+         damage: 4
          frontColor: ff6666
          backColor: cf5367
          speed: 3

@@ -1,7 +1,12 @@
 name: "EternalCosmos"
 displayName: "EternalCosmos"
 author: "!ereHyddeS#9188"
-description: "Beyond"
+description: "Beyond
+
+Contributors:
+ereHyddeS
+Blop
+Antlrr"
 version: "0.1"
 minGameVersion: "120"
 hidden: "false"

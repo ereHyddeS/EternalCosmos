@@ -2,8 +2,8 @@ type: LiquidConverter
 size: 2
 craftTime: 150
 hasPower: true
-liquidCapacity: 2.5
-outputLiquid: liquid-vitriol/0.3
+liquidCapacity: 60
+outputLiquid: liquid-vitriol/1
 consumes: {
   power: 1.5
   items: {
@@ -25,4 +25,9 @@ requirements: [
 ]
 drawer: DrawMixer
 category: crafting
-research: cryofluid-mixer
+research:  {
+  parent: cryofluid-mixer
+  objectives: [
+    sphalerite
+  ]
+}
