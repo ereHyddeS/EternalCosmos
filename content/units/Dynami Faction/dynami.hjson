@@ -32,6 +32,8 @@ weapons: [
          type: BasicBulletType
          sprite: eternalcosmos-chaser
          hitEffect: explosion
+         shrinkX: 0.25
+         shrinkY: 0.1
          width: 11
          height: 11
          damage: 5
@@ -68,6 +70,8 @@ weapons: [
          fragBullet: {
             type: BasicBulletType
             sprite: eternalcosmos-chaser
+            shrinkX: 0.25
+            shrinkY: 0.1
             width: 8
             height: 8
             hitEffect: explosion
@@ -76,7 +80,7 @@ weapons: [
             lifetime: 90
             speed: 2.3
             collidesTiles: false
-            frontColor: ffffff
+            frontColor: ff6666
             backColor: cf5367
             buildingDamageMultiplier: 0.5
             trailEffect: {

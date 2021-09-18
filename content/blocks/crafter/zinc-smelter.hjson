@@ -11,7 +11,10 @@ health: 300
 craftEffect: smeltsmoke
 ambientSound: smelter
 ambientVolume: 0.8
-drawer: DrawMixer
+drawer: {
+   type: DrawSmelter
+   flameColor: 8a99b8
+}
 consumes: {
    power: 1.5
    items: {

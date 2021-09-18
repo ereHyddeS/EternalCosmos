@@ -54,10 +54,11 @@ weapons: [
       recoil: 0.7
       bullet: {
          type: BasicBulletType
-         sprite: eternalcosmos-chaser
-         shrinkY: 0
-         width: 8
-         height: 8
+         sprite: eternalcosmos-ring
+         shrinkX: 0.3
+         shrinkY: 0.3
+         width: 7.5
+         height: 7.5
          damage: 7
          frontColor: ffffff
          backColor: cf5367
@@ -99,10 +100,11 @@ weapons: [
       shootSound: artillery
       bullet: {
          type: BasicBulletType
-         sprite: eternalcosmos-chaser
-         shrinkY: 0
-         width: 10
-         height: 10
+         sprite: eternalcosmos-ring
+         shrinkX: 0.3
+         shrinkY: 0.3
+         width: 8.75
+         height: 8.75
          damage: 4
          frontColor: ff6666
          backColor: cf5367

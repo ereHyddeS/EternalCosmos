@@ -1,12 +1,11 @@
 type: mech
 controller: GroundAI
-health: 300
+health: 375
 armor: 3
 hitSize: 8
 commandLimit: 8
 speed: 0.65
-itemCapacity: 30
-singleTarget: true
+itemCapacity: 35
 deathExplosionEffect: {
    type: MultiEffect
    effects: [
@@ -47,15 +46,14 @@ weapons: [
       mirror: true
       rotate: false
       alternate: true
-      reload: 18
-      x: -6
-      y: 1.5
+      reload: 17
+      x: -5.5
+      y: 2
       shots: 5
       shotDelay: 0
-      inaccuracy: 3
+      inaccuracy: 10
       shootCone: 30
-      chargeSound: shootBig
-      shootSound: none
+      shootSound: shootBig
       recoil: 1
       bullet: {
          type: LaserBoltBulletType
@@ -64,17 +62,13 @@ weapons: [
          despawnEffect: hitBulletSmall
          shootEffect: shootSmall
          reflectable: true
-         recoil: 2
          shrinkY: 0
-         width: 3
-         height: 12
-         damage: 5
+         width: 2
+         height: 10
+         damage: 18
          lightColor: ffffff
          speed: 4
-         lifetime: 20
-         pierce: true
-         pierceBuilding: true
-         pierceCap: 2
+         lifetime: 16
       }
    }
 ]

@@ -10,4 +10,6 @@ effect: {
    healthMultiplier: 0.9
    armorMultiplier: 0
    damage: 0.5
+   transitionDamage: 10
+   affinities: [wet]
 }
