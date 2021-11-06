@@ -1,0 +1,110 @@
+type: ItemTurret
+size: 3
+health: 1170
+range: 112
+reloadTime: 11
+shots: 4
+spread: 90
+inaccuracy: 5
+shootLength: 0
+shootCone: 360
+shootSound: shoot
+ammoTypes: {
+   lead: {
+      type: BasicBulletType
+      width: 10
+      height: 10
+      speed: 3.5
+      lifetime: 32
+      sprite: eternalcosmos-chaser
+      damage: 10
+      collidesGround: false
+      ammoMultiplier: 2
+      fragBullets: 3
+      fragCone: 90
+      fragBullet: {
+         type: BasicBulletType
+         width: 8
+         height: 8
+         shrinkX: 1.5
+         shrinkY: 1.5
+         speed: 1
+         lifetime: 40
+         sprite: eternalcosmos-chaser
+         frontColor: fff8e8
+         collidesAir: false
+         damage: 2
+         splashDamage: 5
+         splashDamageRadius: 25
+      }
+   }
+   metaglass: {
+      type: BasicBulletType
+      width: 10
+      height: 10
+      speed: 3.5
+      lifetime: 32
+      sprite: eternalcosmos-chaser
+      frontColor: ffffff
+      backColor: 454545
+      damage: 15
+      collidesGround: false
+      ammoMultiplier: 2
+      fragBullets: 3
+      fragCone: 90
+      fragBullet: {
+         type: BasicBulletType
+         width: 8
+         height: 8
+         shrinkX: 1.5
+         shrinkY: 1.5
+         speed: 1
+         lifetime: 40
+         sprite: eternalcosmos-chaser
+         frontColor: 454545
+         backColor: 454545
+         collidesAir: false
+         damage: 3
+         splashDamage: 7
+         splashDamageRadius: 20
+      }
+   }
+   plastanium: {
+      type: BasicBulletType
+      width: 10
+      height: 10
+      speed: 3.5
+      lifetime: 32
+      sprite: eternalcosmos-chaser
+      frontColor: fffac6
+      backColor: d8d97f
+      damage: 25
+      collidesGround: false
+      ammoMultiplier: 2
+      fragBullets: 3
+      fragCone: 90
+      fragBullet: {
+         type: BasicBulletType
+         width: 8
+         height: 8
+         shrinkX: 1.5
+         shrinkY: 1.5
+         speed: 1
+         lifetime: 40
+         sprite: eternalcosmos-chaser
+         frontColor: d8d97f
+         backColor: d8d97f
+         collidesAir: false
+         damage: 5
+         splashDamage: 20
+         splashDamageRadius: 30
+      }
+   }
+}
+category: turret
+research: brass
+requirements: [
+  lead/180
+  graphite/150
+  titanium/220
+]

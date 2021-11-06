@@ -1,0 +1,38 @@
+type: GenericCrafter
+hasItems: true
+hasPower: true
+craftTime: 90
+outputItem: brass/1
+size: 2
+health: 300
+craftEffect: smeltsmoke
+ambientSound: smelter
+ambientVolume: 1
+drawer: {
+   type: DrawSmelter
+   flameColor: 8a99b8
+}
+consumes: {
+   power: 1.75
+   items: {
+      items: [
+         zinc/1
+         copper/2
+      ]
+   }
+}
+category: crafting
+research: {
+  parent: zinc-smelter
+  objectives: [
+    zinc
+  ]
+}
+requirements: [
+  copper/70
+  lead/50
+  titanium/25
+  graphite/45
+  zinc/30
+]
+ 

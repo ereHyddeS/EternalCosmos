@@ -26,6 +26,7 @@ weapons: [
       firstShotDelay: 30
       shotDelay: 5
       shootSound: lasershoot
+      parentizeEffects: true
       bullet: {
          type: LaserBoltBulletType
          damage: 0
@@ -45,6 +46,7 @@ weapons: [
             strokeTo: 1
             colorFrom: 85ffc6
             colorTo: fffffff
+            followParent: true
          }
       }
    }

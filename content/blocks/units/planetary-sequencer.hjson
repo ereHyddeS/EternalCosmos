@@ -1,0 +1,23 @@
+type: Reconstructor
+size: 3
+constructTime: 720
+consumes: {
+  power: 1.2
+    items: {
+      items: [
+        zinc/35
+        silicon/40
+      ]
+   }
+}
+upgrades: [
+  [kopis, xiphos]
+]
+requirements: [
+  copper/200
+  lead/150
+  zinc/100
+  graphite/125
+]
+category: units
+research: cosmic-factory

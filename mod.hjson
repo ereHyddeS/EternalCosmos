@@ -3,10 +3,20 @@ displayName: "EternalCosmos"
 author: "!ereHyddeS#9188"
 description: "Beyond
 
+Changelogs, Featuring: Phyto Faction
+• New Phyto Unit
+• New Blaze Unit
+• New Brass Smelter
+• New Planetary Sequencer
+• New Crossfire Turret
+• New Magnetar Turret
+• Improved Thera Effect
+• Improved Brass Palette
+
 Contributors:
 ereHyddeS
 Blop
 Antlrr"
-version: "0.2"
+version: "0.3"
 minGameVersion: "120"
 hidden: "false"

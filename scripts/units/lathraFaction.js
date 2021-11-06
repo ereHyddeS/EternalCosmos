@@ -1,5 +1,5 @@
-const statuses = require("cosmiclibs/statuses")
-const refresh = require("cosmiclibs/refresh")
+const statuses = require("libs/cosmicstatuses")
+const refresh = require("libs/cosmicrefresh")
 
 const lathra = extendContent(UnitType, "lathra", {});
 lathra.constructor = () => extend(UnitEntity, {

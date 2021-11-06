@@ -20,12 +20,11 @@ weapons: [
       top: false
       mirror: true
       rotate: false
-      alternate: true
-      reload: 120
+      alternate: false
+      reload: 96
       x: -4.25
       y: 3.75
-      shots: 2
-      shotDelay: 3
+      shots: 1
       recoil: 0.5
       shootSound: missle
       bullet: {
@@ -36,7 +35,7 @@ weapons: [
          shrinkY: 0.1
          width: 11
          height: 11
-         damage: 5
+         damage: 3
          collidesTiles: true
          frontColor: ffffff
          backColor: cf5367
@@ -76,7 +75,7 @@ weapons: [
             height: 8
             hitEffect: explosion
             hitSound: boom
-            damage: 2
+            damage: 3
             lifetime: 90
             speed: 2.3
             collidesTiles: false

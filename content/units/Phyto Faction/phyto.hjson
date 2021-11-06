@@ -1,0 +1,121 @@
+type: legs
+controller: BuilderAI
+isCounted: false
+health: 250
+armor: 1
+hitSize: 10
+commandLimit: 6
+mineSpeed: 8
+mineTier: 2
+buildSpeed: 1
+speed: 0.8
+rotateSpeed: 21
+itemCapacity: 60
+
+legCount: 4
+legLength: 11
+legTrns: 0.7
+legMoveSpace: 1.4
+legBaseOffset: 1
+hovering: true
+allowLegStep: true
+visualElevation: 0.2
+groundLayer: 75
+weapons: [
+   {
+      name: fang-weapon
+      top: false
+      mirror: true
+      rotate: false
+      reload: 120
+      x: -2
+      y: 3.5
+      shots: 1
+      recoil: 1
+      shootSound: plantBreak
+      bullet: {
+         type: RailBulletType
+         sprite: eternalcosmos-vine
+         damage: 200
+         buildingDamageMultiplier: 0.25
+         length: 120
+         pierceDamageFactor: 0.5
+         updateEffectSeg: 5
+         updateEffect: {
+            type: MultiEffect
+            effects: [
+               {
+                  type: ParticleEffect
+                  particles: 1
+                  length: 0.01
+                  lifetime: 45
+                  sizeFrom: 5
+                  sizeTo: 5
+                  colorFrom: 799e5fff
+                  colorTo: 799e5fff
+                  region: eternalcosmos-vine
+               }
+               {
+                  type: ParticleEffect
+                  particles: 1
+                  length: 0.01
+                  lifetime: 45
+                  sizeFrom: 5
+                  sizeTo: 5
+                  colorFrom: b07a67ff
+                  colorTo: b07a6700
+                  region: eternalcosmos-vine-back
+               }
+            ]
+         }
+      }
+   }
+   {
+      name: fang-weapon
+      top: false
+      mirror: true
+      rotate: false
+      reload: 150
+      x: -4.75
+      y: 1.75
+      shots: 1
+      recoil: 1
+      shootSound: plantBreak
+      bullet: {
+         type: RailBulletType
+         sprite: eternalcosmos-vine
+         damage: 200
+         buildingDamageMultiplier: 0.25
+         length: 120
+         pierceDamageFactor: 0.5
+         updateEffectSeg: 5
+         updateEffect: {
+            type: MultiEffect
+            effects: [
+               {
+                  type: ParticleEffect
+                  particles: 1
+                  length: 0.01
+                  lifetime: 45
+                  sizeFrom: 5
+                  sizeTo: 5
+                  colorFrom: 799e5fff
+                  colorTo: 799e5fff
+                  region: eternalcosmos-vine
+               }
+               {
+                  type: ParticleEffect
+                  particles: 1
+                  length: 0.01
+                  lifetime: 45
+                  sizeFrom: 5
+                  sizeTo: 5
+                  colorFrom: b07a67ff
+                  colorTo: b07a6700
+                  region: eternalcosmos-vine-back
+               }
+            ]
+         }
+      }
+   }
+]

@@ -9,7 +9,15 @@ plans: [
     time: 1500
     requirements: [
       silicon/15
-      brass/10
+      brass/5
+    ]
+  }
+  {
+    unit: blaze
+    time: 1200
+    requirements: [
+      silicon/15
+      zinc/8
     ]
   }
 ]

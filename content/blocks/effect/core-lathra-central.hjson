@@ -1,0 +1,17 @@
+type: CoreBlock
+size: 6
+health: 9200
+itemCapacity: 20000
+thrusterLength: 14
+category: effect
+unitCapModifier: 32
+unitType: lathra
+requirements: [
+  copper/14000
+  lead/14000
+  silicon/8000
+  thorium/7000
+  surge-alloy/5000
+]
+research: core-nucleus
+researchCostMultiplier: 15

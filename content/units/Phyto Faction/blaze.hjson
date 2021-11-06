@@ -1,0 +1,159 @@
+type: mech
+controller: GroundAI
+health: 150
+armor: 1
+hitSize: 6
+speed: 0.75
+weapons: [
+   {
+      x: 0
+      y: 0
+      shootY: 0
+      mirror: false
+      reload: 90
+      shootCone: 360
+      rotate: true
+      bullet: {
+         type: PointBulletType
+         damage: 0
+         splashDamage: 25
+         splashDamageRadius: 40
+         shootEffect: none
+         trailSpacing: 5
+         trailEffect: {
+            type: ParticleEffect
+            particles: 1
+            length: 0.01
+            lifetime: 45
+            sizeFrom: 5
+            sizeTo: 5
+            colorFrom: 799e5f00
+            colorTo: 799e5f00
+            region: eternalcosmos-vine
+         }
+         hitEffect: {
+            type: MultiEffect
+            effects: [
+               {
+                  type: WaveEffect
+                  colorFrom: ffb166
+                  colorTo: ff9566df
+                  sizeFrom: 0
+                  sizeTo: 50
+                  strokeFrom: 2
+                  strokeTo: 1.25
+                  lifetime: 22
+               }
+               {
+                  type: ParticleEffect
+                  colorFrom: ffb166
+                  colorTo: ff9566cc
+                  particles: 10
+                  cone: 360
+                  baseLength: 0
+                  length: 40
+                  region: circle
+                  sizeFrom: 4
+                  sizeTo: 3.5
+                  lifetime: 25
+               }
+               {
+                  type: ParticleEffect
+                  colorFrom: ff9566
+                  colorTo: ff956688
+                  particles: 10
+                  cone: 360
+                  baseLength: 0
+                  length: 25
+                  region: circle
+                  sizeFrom: 3.5
+                  sizeTo: 5
+                  lifetime: 35
+               }
+            ]
+         }
+         speed: 160
+         lifetime: 1
+         fragBullets: 3
+         fragCone: 360
+         fragLifeMin: 0.5
+         fragLifeMax: 1.25
+         fragBullet: {
+            type: BasicBulletType
+            damage: 5
+            speed: 35
+            lifetime: 1
+            backColor: 00000000
+            frontColor: 00000000
+            incendChance: 0.8
+            incendAmount: 2
+            incendSpread: 15
+         }
+      }
+   }
+   {
+      x: 0
+      y: 0
+      shootY: 0
+      mirror: false
+      shootOnDeath: true
+      controllable: false
+      autoTarget: false
+      shootCone: 360
+      reload: 24
+      bullet: {
+         type: BasicBulletType
+         speed: 1
+         lifetime: 1
+         damage: 0
+         splashDamage: 50
+         splashDamageRadius: 40
+         shootEffect: none
+         incendChance: 1
+         incendAmount: 5
+         incendSpread: 32
+         killShooter: true
+         hitEffect: {
+            type: MultiEffect
+            effects: [
+               {
+                  type: WaveEffect
+                  colorFrom: ffb166
+                  colorTo: ff9566df
+                  sizeFrom: 0
+                  sizeTo: 50
+                  strokeFrom: 2
+                  strokeTo: 1.25
+                  lifetime: 22
+               }
+               {
+                  type: ParticleEffect
+                  colorFrom: ffb166
+                  colorTo: ff9566cc
+                  particles: 10
+                  cone: 360
+                  baseLength: 0
+                  length: 40
+                  region: circle
+                  sizeFrom: 4
+                  sizeTo: 3.5
+                  lifetime: 25
+               }
+               {
+                  type: ParticleEffect
+                  colorFrom: ff9566
+                  colorTo: ff956688
+                  particles: 10
+                  cone: 360
+                  baseLength: 0
+                  length: 25
+                  region: circle
+                  sizeFrom: 3.5
+                  sizeTo: 5
+                  lifetime: 35
+               }
+            ]
+         }
+      }
+   }
+]
